@@ -16,7 +16,7 @@ public class IndexController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
-		return "/index.html";
+		return "../static/index.html";
 	}
 	
 //	@RequestMapping(value = "/enviar", method = RequestMethod.POST)
