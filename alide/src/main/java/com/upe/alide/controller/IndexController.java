@@ -14,7 +14,7 @@ public class IndexController {
 	@Autowired
 	private IndexRepository alunoEntity;
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = {"/", "index.html", "home"}, method = RequestMethod.GET)
 	public String index() {
 		return "../static/index.html";
 	}
