@@ -19,12 +19,12 @@ public class IndexController {
 		return "/index.html";
 	}
 	
-	@RequestMapping(value = "/enviar", method = RequestMethod.POST)
-	public String indexForm(Aluno aluno) {
-		
-		alunoEntity.save(aluno);
-		
-		return "/cadastroRealizado.html";
-	}
+//	@RequestMapping(value = "/enviar", method = RequestMethod.POST)
+//	public String indexForm(Aluno aluno) {
+//		
+//		alunoEntity.save(aluno);
+//		
+//		return "/cadastroRealizado.html";
+//	}
 	
 }
