@@ -22,11 +22,11 @@ Anotações para "injeção" de rotinas nas classes:
 
 ### Annotation para Controller
 
-**@Controller** : Define que uma classe assume o papel de Controller na aplicação com pradrão MVC;
+* **@Controller** : Define que uma classe assume o papel de Controller na aplicação com pradrão MVC;
 
-**@RequestMapping(value="", method=RequestMethod.)** : Define quais endereços de URL fazem chamada Requisição
-    **value=""** ou **value={"/", "/a", "/b"}** : Valor de chamada da requisição, dado especifico ou vetor de dados
-    **method=RequestMethod.GET** ou **.POST** : Tipo de Requisição que ele trata
+* **@RequestMapping(value="", method=RequestMethod.)** : Define quais endereços de URL fazem chamada Requisição
+    * **value=""** ou **value={"/", "/a", "/b"}** : Valor de chamada da requisição, dado especifico ou vetor de dados
+    * **method=RequestMethod.GET** ou **.POST** : Tipo de Requisição que ele trata
 
 ### Annotation para Model
 
