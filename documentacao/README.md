@@ -20,7 +20,7 @@ Os pacotes do java da aplicação estão dispostos da seguinte maneira:
 ## Annotation
 Anotações para "injeção" de rotinas nas classes:
 
-### Annotation para Controller
+### Controller
 
 - **@Controller** : Define que uma classe assume o papel de Controller na aplicação com pradrão MVC:
 
@@ -45,7 +45,33 @@ Anotações para "injeção" de rotinas nas classes:
 
     - **method=RequestMethod.GET** ou **.POST** : Tipo de Requisição que ele trata
 
-### Annotation para Model
+### Model
+
+* **Entity** : 
+* **GeneratedValue(strategy = GenerationType.AUTO)** : 
+
+
+### Configuration
+
+* **@Configuration** : Faz a classe ser visualizada como uma classe de configuração:
+```java
+@Configuration
+public class ClasseConfig() {
+
+}
+```
+* **@Bean** : Faz uma Classe ou Metodo funcionar como uma dependencia para outras classes:
+```java
+@Configuration
+public class ClassConfig() {
+
+    @Bean
+    public Type metodoConfig() {
+
+        return type;
+    }
+}
+```
 
 
 ## Classes (OBJETOS)
