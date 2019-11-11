@@ -26,7 +26,7 @@ Anotações para "injeção" de rotinas nas classes:
 
     ```java
     @Controller
-    public class Controller() {        
+    public class Controller {        
 
     }
     ```
@@ -47,8 +47,32 @@ Anotações para "injeção" de rotinas nas classes:
 
 ### Model
 
-* **Entity** : 
-* **GeneratedValue(strategy = GenerationType.AUTO)** : 
+* **@Entity** : Apresenta como entidade do banco de dados
+
+* **@ID** : Aponta atributo que servirá como Id (Chave Primária da Tabela)
+
+* **@GeneratedValue(strategy = GenerationType.AUTO)** : Configura forma como a chave será gerada no banco
+
+```java
+@Entity
+public class ClasseEntidade {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO) // AUTO - IDENTITY - SEQUENCE - TABLE
+    private long id;
+
+    private String nome;
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+}
+```
 
 
 ### Configuration
@@ -56,14 +80,14 @@ Anotações para "injeção" de rotinas nas classes:
 * **@Configuration** : Faz a classe ser visualizada como uma classe de configuração:
 ```java
 @Configuration
-public class ClasseConfig() {
+public class ClasseConfig {
 
 }
 ```
 * **@Bean** : Faz uma Classe ou Metodo funcionar como uma dependencia para outras classes:
 ```java
 @Configuration
-public class ClassConfig() {
+public class ClassConfig {
 
     @Bean
     public Type metodoConfig() {
