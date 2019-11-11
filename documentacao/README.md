@@ -30,6 +30,15 @@ Anotações para "injeção" de rotinas nas classes:
 
 ### Annotation para Model
 
+
+## Classes de Implementação
+
+- **ModelAndView**: Faz uma ponte entre as instancias do Model e a renderização da View por meio das classes com a *Annotation* *@Controller*:
+
+    ```java
+    ModelAndController modelAndController = new ModelAndController("/mome_da_página_de_redirecionamento");
+    ```
+
 ## Thymeleaf
 
 **Thymeleaf** é um engine template html, ele tem **atributos** especiais em sua composição e **layouts** também
