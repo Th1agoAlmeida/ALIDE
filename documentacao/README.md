@@ -33,10 +33,14 @@ Anotações para "injeção" de rotinas nas classes:
 
 ## Classes de Implementação
 
-- **ModelAndView**: Faz uma ponte entre as instancias do Model e a renderização da View por meio das classes com a *Annotation* *@Controller*:
+- **ModelAndView**: Faz uma ponte entre as instancias do Model e a renderização da View por meio das classes com a *Annotation @Controller*:
 
     ```java
-    ModelAndController modelAndController = new ModelAndController("/mome_da_página_de_redirecionamento");
+    public ModelAndController metodoGet_Post() {
+        ModelAndController modelAndController = new ModelAndController("/pagina_de_redirecionamento.html");
+        // Logica
+        return modelAndController;
+    }
     ```
 
 ## Thymeleaf
