@@ -36,9 +36,12 @@ Anotações para "injeção" de rotinas nas classes:
 - **ModelAndView**: Faz uma ponte entre as instancias do Model e a renderização da View por meio das classes com a *Annotation @Controller*:
 
     ```java
+    @RequestMapping(value="/requisicao", method=RequestMethod.GET) //RequestMethod.GET / RequestMethod.POST
     public ModelAndController metodoGet_Post() {
         ModelAndController modelAndController = new ModelAndController("/pagina_de_redirecionamento.html");
-        // Logica
+        
+        // Implementação
+        
         return modelAndController;
     }
     ```
