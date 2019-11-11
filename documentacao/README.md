@@ -43,6 +43,8 @@ Anotações para "injeção" de rotinas nas classes:
 
     - **method=RequestMethod.GET** ou **.POST** : Tipo de Requisição que ele trata
 
+---
+
 ### Model
 
 * **@Entity** : Apresenta como entidade do banco de dados
@@ -53,13 +55,28 @@ Anotações para "injeção" de rotinas nas classes:
 
 ```java
 @Entity
-public class ClasseEntidade {
+public class ClasseEntidade implements Serializable {
+    
+	/**
+	 * 
+	 * Interface Serializable Gera o private static final long serialVersionUID = 1L;
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO) // AUTO - IDENTITY - SEQUENCE - TABLE
     private long id;
 
     private String nome;
+
+    public long getId() {
+        return this.id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return this.nome;
@@ -72,6 +89,7 @@ public class ClasseEntidade {
 }
 ```
 
+---
 
 ### Configuration
 
@@ -95,6 +113,7 @@ public class ClassConfig {
 }
 ```
 
+---
 
 ## Classes (OBJETOS)
 
@@ -110,6 +129,8 @@ public class ClassConfig {
         return modelAndController;
     }
     ```
+
+---
 
 ## Thymeleaf
 
