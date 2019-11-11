@@ -24,20 +24,18 @@ Anotações para "injeção" de rotinas nas classes:
 
 - **@Controller** : Define que uma classe assume o papel de Controller na aplicação com pradrão MVC:
 
-    ```java
-    @Controller
-    public class Controller {        
-
-    }
-    ```
-
 - **@RequestMapping(value="", method=RequestMethod.)** : Define quais endereços de URL fazem chamada Requisição:
 
     ```java
-    @RequestMapping(value="nome_da_requisicao", method=RequestMethod.) // GET / POST
-    public Type metodo() {
+    @Controller
+    public class Controller {     
 
-        return type;
+        @RequestMapping(value="nome_da_requisicao", method=RequestMethod.) // GET / POST
+        public Type metodo() {
+
+            return type;
+        }
+
     }
     ```
 
