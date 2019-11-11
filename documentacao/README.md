@@ -117,7 +117,7 @@ public class ClassConfig {
 
 ---
 
-## Classes (OBJETOS)
+## Classes (Objetos)
 
 - **ModelAndView**: Faz uma ponte entre as instancias do Model e a renderização da View por meio das classes com a *Annotation @Controller*:
 
