@@ -17,8 +17,10 @@ Os pacotes do java da aplicação estão dispostos da seguinte maneira:
                 repository;
 
 
+---
+
 ## Annotation
-Anotações para "injeção" de rotinas nas classes:
+Anotações para "injeção" de rotinas nas classes: [Mais Informações]: https://pt.wikipedia.org/wiki/Annotation_(java) 
 
 ### Controller
 
