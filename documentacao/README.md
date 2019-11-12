@@ -45,6 +45,25 @@ Anotações para "injeção" de rotinas nas classes: [Mais Informações](https:
 
     - **method=RequestMethod.GET** ou **.POST** : Tipo de Requisição que ele trata
 
+* **@AutoWired** : Faz injeção de dependências de um objeto que realiza as operações de Crud:
+
+```java
+    @Controller
+    public class Controller() {
+
+        @AutoWired
+        private ObjetoRepository objetoDao;
+
+        public Type post(ObjetoRepository objetoDao) {
+
+            this.objetoDao.save(objetoDao); // save(), find(), delete()...
+
+            return type;
+        }
+
+    }
+```
+
 ---
 
 ### Model
@@ -117,6 +136,23 @@ public class ClassConfig {
 
 ---
 
+### Repository
+
+* **Repository** : Pacote para gerar minhas classes do DAO
+
+```java
+
+public interface ClasseRepository extends CrudRepository<Class, T_ID> {
+
+}
+
+// Dado Essa implementação ela já pode ser usada no projeto
+// Nome_Class : Classe usada para DAO
+// T_ID : Tipo do ID
+
+```
+
+---
 ## Classes (Objetos)
 
 - **ModelAndView**: Faz uma ponte entre as instancias do Model e a renderização da View por meio das classes com a *Annotation @Controller*:
