@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class IndexController {
+public class JogosController {
 	
-	@RequestMapping(value = {"/", "index.html", "home"}, method = RequestMethod.GET)
-	public String index() {
+	@RequestMapping(value = "/jogos", method = RequestMethod.GET)
+	public String getJogos() {
 		
-		return "../static/index.html";
+		return "../static/jogos.html";
 	}
 	
 }

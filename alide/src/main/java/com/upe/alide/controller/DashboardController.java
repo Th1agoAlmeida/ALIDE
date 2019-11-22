@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class IndexController {
+public class DashboardController {
 	
-	@RequestMapping(value = {"/", "index.html", "home"}, method = RequestMethod.GET)
-	public String index() {
+	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+	public String getDashboard() {
 		
-		return "../static/index.html";
+		return "../static/dashboard.html";
 	}
 	
 }

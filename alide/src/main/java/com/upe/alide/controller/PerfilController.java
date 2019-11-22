@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class IndexController {
+public class PerfilController {
 	
-	@RequestMapping(value = {"/", "index.html", "home"}, method = RequestMethod.GET)
-	public String index() {
+	@RequestMapping(value = "/perfil.html", method = RequestMethod.GET)
+	public String getPerfil() {
 		
-		return "../static/index.html";
+		return "../static/perfil.html";
 	}
 	
 }
