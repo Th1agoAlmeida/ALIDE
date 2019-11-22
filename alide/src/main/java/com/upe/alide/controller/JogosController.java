@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class JogosController {
 	
-	@RequestMapping(value = "/jogos", method = RequestMethod.GET)
-	public String getJogos() {
+	@RequestMapping(value = "/jogos.html", method = RequestMethod.GET)
+	public String jogos() {
 		
 		return "../static/jogos.html";
 	}

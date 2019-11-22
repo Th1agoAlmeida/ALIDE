@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PerfilController {
 	
 	@RequestMapping(value = "/perfil.html", method = RequestMethod.GET)
-	public String getPerfil() {
+	public String perfil() {
 		
 		return "../static/perfil.html";
 	}
