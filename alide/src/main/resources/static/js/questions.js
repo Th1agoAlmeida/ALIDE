@@ -17,7 +17,7 @@ var questions = [{
     "option1": "10+1",
     "option2": "101",
     "option3": "“11”",
-    "option4": "11",
+    "option4": `"${101}"`,
     "answer": "‘101’"
 }, {
     "question": "Analise as seguintes frases e assinale a alternativa correta: I. Conjunto de programas. II. Usuários ou profissionais em TI. III. Parte física do computador.",
