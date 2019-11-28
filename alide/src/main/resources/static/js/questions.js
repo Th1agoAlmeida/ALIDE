@@ -5,7 +5,7 @@ var questions = [{
     option2 : "boolean, short, long, float, double, int, char",
     option3 : "boolean, byte, short, long, float, double, int",
     option4 : "boolean, float, double, int",
-    answer : "3"
+    answer : "1"
 }, {
     question: "Em uma expressão que tem mais de 1 operador aritmético é necessário fazer uma análise de quais operações devem ser  resolvidas primeiro. Qual a ordem de precedência dos operadores aritméticos?",
     option1 : "primeiro multiplicação; segundo divisão; terceiro resto (%); quarto soma; quinto subtração",
