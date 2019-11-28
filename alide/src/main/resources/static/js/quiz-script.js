@@ -14,7 +14,7 @@ var nextButton = document.getElementById('nextButton');
 var resultCont = document.getElementById('result');
 
 function resultadoFinal() {
-	
+
 	container.style.display = 'none';
 	resultCont.style.display = '';
 
@@ -22,7 +22,6 @@ function resultadoFinal() {
 
 	let paragrafo_resutado = document.createElement('p');
 	paragrafo_resutado.innerHTML = `Resultado: ${score} Pontos`;
-
 
 	resultCont.appendChild(paragrafo_resutado);
 	// let paragrafo_recomendacoes = 
