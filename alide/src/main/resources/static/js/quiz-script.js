@@ -16,15 +16,19 @@ var resultCont = document.getElementById('result');
 function resultadoFinal() {
 
 	container.style.display = 'none';
-	resultCont.style.display = '';
+	resultCont.style.display = 'block';
 
 	// resultCont.textContent = 'Sua pontuação: ' + score;
+	for (let i in respostasErradas){
+		var parag = document.createElement('P');
+		var text = document.createTextNode(recomendacoes[respostasErradas[i]]);
+		parag.appendChild(text);
+		resultCont.appendChild(parag);
+	}
+	let paragrafo_resultado = document.createElement('p');
+	paragrafo_resultado.innerHTML = `Resultado: ${score} Pontos`;
 
-	let paragrafo_resutado = document.createElement('p');
-	paragrafo_resutado.innerHTML = `Resultado: ${score} Pontos`;
-
-	resultCont.appendChild(paragrafo_resutado);
-	// let paragrafo_recomendacoes = 
+	 resultCont.appendChild(paragrafo_resultado);
 } 
 
 function loadQuestion(index) {
@@ -55,13 +59,15 @@ function loadNextQuestion() {
 	}
 	
 	currentQuestion++;
-
+	selectedOption.checked = false;
+	
 	if(currentQuestion == totQuestions - 1){ // Verifica até ultima questão, quando chegar a ultima questão troca o nome do botão
 		nextButton.textContent = 'Finish';
 	}
 
 	if(currentQuestion == totQuestions){
 		resultadoFinal();
+		return;
 	}
 
 	loadQuestion(currentQuestion);
