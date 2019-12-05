@@ -15,17 +15,17 @@ var questions = [{
 }, {
     "question": " O valor da declaração a seguir gera qual resultado: String var = “10” + 1",
     "option1": "10+1",
-    "option2": "101",
+    "option2": `"101"`,
     "option3": "“11”",
     "option4": "11",
-    "answer": "‘101’"
+    "answer": "2"
 }, {
     "question": "Analise as seguintes frases e assinale a alternativa correta: I. Conjunto de programas. II. Usuários ou profissionais em TI. III. Parte física do computador.",
     "option1": "I- Hardware, II- Software, III- Firmware.",
     "option2": "I- Software, II- Firmware, III- Hardware.",
     "option3": "Software, II- Peopleware, III- Hardware.",
     "option4": "I - Software, II- Personware, III- Hardware.",
-    "answer": "3    "
+    "answer": "3"
 }, {
     "question": "HTML é uma linguagem de:",
     "option1": "Programação.",
