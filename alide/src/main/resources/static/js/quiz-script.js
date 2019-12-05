@@ -1,6 +1,7 @@
 
 var currentQuestion = 0;
 var score = 0;
+const increment = 10;
 var totQuestions = questions.length;
 var respostasErradas = [];
 
@@ -18,17 +19,36 @@ function resultadoFinal() {
 	container.style.display = 'none';
 	resultCont.style.display = 'block';
 
-	// resultCont.textContent = 'Sua pontuação: ' + score;
-	for (let i in respostasErradas){
-		var parag = document.createElement('P');
-		var text = document.createTextNode(recomendacoes[respostasErradas[i]]);
-		parag.appendChild(text);
-		resultCont.appendChild(parag);
-	}
 	let paragrafo_resultado = document.createElement('p');
-	paragrafo_resultado.innerHTML = `Resultado: ${score} Pontos`;
+	paragrafo_resultado.innerHTML = `Resultado: ${score} / ${increment * questions.length} Pontos`;
+	
+	resultCont.appendChild(paragrafo_resultado);
 
-	 resultCont.appendChild(paragrafo_resultado);
+	let paragrafo = document.createElement('P');
+
+	if(respostasErradas.length > 0) {
+		let fail = document.createTextNode("Você não foi muito bem em algumas questões, recomento que olhe essas fontes de ensino: ");
+		paragrafo.appendChild(fail);
+		resultCont.appendChild(paragrafo);
+	}
+
+	for (let i in respostasErradas){
+		
+		let parag = document.createElement('p');
+
+		let a = document.createElement('a');
+		let text = document.createTextNode(recomendacoes[respostasErradas[i]][0]);
+		a.appendChild(text);
+
+		a.title = recomendacoes[respostasErradas[i]][0];
+		a.href = recomendacoes[respostasErradas[i]][1];
+
+		parag.appendChild(a);
+
+		resultCont.appendChild(parag);
+
+	}
+
 } 
 
 function loadQuestion(index) {
@@ -53,7 +73,7 @@ function loadNextQuestion() {
 	var answer = selectedOption.value;
 
 	if(questions[currentQuestion].answer == answer){ // Se questão correta score recebe +10 pt senão numero da questão guarde para recber recomendação de estudo
-		score += 10;
+		score += increment;
 	} else {
 		respostasErradas.push(currentQuestion);
 	}

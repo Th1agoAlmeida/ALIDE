@@ -51,7 +51,20 @@ var questions = [{
 }];
 
 var recomendacoes = [
-	"Recomendo estudar 1", "Recomendo estudar 2", "Recomendo estudar 3", "Recomendo estudar 4",
-	"Recomendo estudar 5", "Recomendo estudar 6", "Recomendo estudar 7"
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+
+    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+    
 ];
 
