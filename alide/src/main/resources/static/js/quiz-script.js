@@ -33,7 +33,7 @@ function resultadoFinal() {
 	}
 
 	for (let i in respostasErradas){
-		
+		console.log(i);
 		let parag = document.createElement('p');
 
 		let a = document.createElement('a');

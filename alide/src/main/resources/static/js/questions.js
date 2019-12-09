@@ -54,17 +54,17 @@ var recomendacoes = [
 
     ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
 
-    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+    ["Operadores Aritméticos", "https://www.youtube.com/watch?v=hZG9ODUdxHo&t=1212s"],
+
+    ["Concatenação de Strings", "http://www.tiexpert.net/programacao/java/concatenacao.php"],
+
+    ["Hardware, software, firmware e peopleware", "http://www.meubizu.com.br/informatica/hardware-software-peopleware/"],
+
+    ["Descubra o que é HTML", "https://tableless.github.io/iniciantes/manual/html/"],
 
     ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
 
-    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
-
-    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
-
-    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
-
-    ["Tipos Primitivos", "http://www.universidadejava.com.br/materiais/java-tipos-primitivos/"],
+    ["Como nomear Variáveis no java", "https://www.devmedia.com.br/java-variaveis-e-constantes/38311"],
     
 ];
 

@@ -39,7 +39,7 @@
             </div>
 
             <ul class="nav">
-                <li>
+                <li class="active">
                     <a href="perfil.html">
                         <i class="pe-7s-user"></i>
                         <p>Meu perfil</p>
@@ -52,16 +52,27 @@
                         <p>Jogos</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="desafios.html">
                         <i class="pe-7s-target"></i>
                         <p>Desafios</p>
                     </a>
                 </li>
+                 <li>
+                    <a href="add-desafio.html">
+                        <i class="pe-7s-plus"></i>
+                        <p>Adicionar Desafio</p>
+                    </a>
+                </li>
+                <li>
+                   	<a href="cadastro.html">
+                        <i class="pe-7s-plus"></i>
+                        <p>Cadastrar usuário</p>
+                    </a>
+                </li>
             </ul>
     	</div>
     </div>
-
     
     <div class="main-panel">
         <nav class="navbar navbar-default navbar-fixed">
@@ -95,7 +106,7 @@
                             <ul class="dropdown-menu">
                               <li><a href="#">configurações</a></li>
                               <li class="divider"></li>
-                              <li><a href="logout">Sair</a></li>
+                              <li><a href="#">Sair</a></li>
                             </ul>
                       </li>
                     </ul>
@@ -103,47 +114,6 @@
                 </div>
             </div>
         </nav>
-
-
-
-
-        <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">Lista de desafios</h4>
-                                <p class="category">aqui estão os desafios disponíveis para resolução</p>
-                            </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-hover table-striped">
-                                    <thead>
-                                        <th>ID</th>
-                                    	<th>Nome</th>
-                                    	<th>Feito por</th>
-                                    	<th>Área de conhecimento</th>
-                                    	<th>Pontuação (XP)</th>
-                                    	<th>Descrição</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr th:each="desaf : ${desafios}">
-                                        	<td th:text="${desaf.id}">id</td>
-                                        	<td th:text="${desaf.nomeDesafio}">nome desafio</td>
-                                        	<td th:text="${desaf.criador}">criador</td>
-                                        	<td th:text="${desaf.areaConhecimento}">area de conhecimento</td>
-                                        	<td th:text="${desaf.pontuacao}">pontuaçao</td>
-                                        	<td th:text="${desaf.descricao}">descrição</td>
-                                        	<td><a th:id="${desaf.id}" th:href="'excluir?id=' + ${desaf.id}">excluir</a></td>
-                                        </tr> 
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
-                    </div>
-
-
 
         <footer class="footer">
             <div class="container-fluid">
@@ -158,12 +128,13 @@
                     </ul>
                 </nav>
 
+                
             </div>
         </footer>
 
     </div>
-</div>
 
+</div>
 
 </body>
 

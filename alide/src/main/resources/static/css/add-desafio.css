@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #dff1f2;
+}
+
+.div-form-desafio {
+    background: #348ceb;
+    width: 50%;
+    font-size: 1.4em;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-form-desafio input {
+    width: 350px;
+    height: 35px;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.div-form-desafio textarea {
+    width: 350px;
+    font-size: 0.8em;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+#botao {
+    font-size: 0.8em;
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>Adicionar Desafio</title>
+		<link rel="stylesheet" type="text/css" href="css/add-desafio.css">
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	</head>
+	<body>
+		<div class="div-form-desafio">
+			<form th:action=@{/add-desafio} th:object="${desafio}"  method="post" id="form">
+				<label for=criador>Criador</label>
+				<div>
+					<input type="text" id="criador" th:field="*{criador}"><br>
+				</div>
+
+				<label for=areaConhecimento>Área de conhecimento</label>
+				<div>
+					<input type="text" id="areaConhecimento" th:field="*{areaConhecimento}"><br>
+				</div>
+
+				<label for=pontuacao>Pontuação</label>
+				<div>
+					<input type="number" id="pontuacao" th:field="*{pontuacao}"><br>
+				</div>
+
+				<label for=desafio>Nome do Desafio</label>
+				<div>
+					<input type="text" id="desafio" th:field="*{nomeDesafio}"><br>
+				</div>
+
+				<label for=descricao>Descrição</label><br>
+				<textarea id="descricao" rows="10" cols="40" th:field="*{descricao}"></textarea><br>
+				
+				<button type="submit" id=botao>Adicionar Desafio</button>
+			</div>
+			
+		</form>
+	</body>
+
+</html>

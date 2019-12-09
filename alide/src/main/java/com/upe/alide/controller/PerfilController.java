@@ -9,8 +9,10 @@ public class PerfilController {
 	
 	@RequestMapping(value = {"/perfil.html", "/perfil"}, method = RequestMethod.GET)
 	public String perfil() {
+		DirecionaUsuarioUrl du = new DirecionaUsuarioUrl();
 		
-		return "../static/perfil.html";
+		return du.direcionaUrl("../static/perfil.html", "../static/perfil-professor", "../static/perfil-professor");
+		
 	}
 	
 }
